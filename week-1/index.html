@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPlan - Fitness aplikacija</title>
+
+    // Bootstrap i CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1>FitPlan fitness aplikacija</h1>
+    <p>FitPlan je aplikacija koja vam pomaže u postizanju vaših fitness ciljeva. Naša aplikacija nudi:</p>
+
+    <ul>
+        <li>Trening snage</li>
+        <li>Plan prehrane</li>
+        <li>Praćenje napretka</li>
+    </ul>
+    <img src="images/fitness.jpeg" alt="Fitness trening" width="400">
+    
+    <header>
+        <h1>FitPlan</h1>
+        <nav>
+            <a href="#pocetna">Početna</a>
+            <a href="#programi">Programi</a>
+            <a href="#kontakt">O nama</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pocetna">
+            <h2>Dobrodošli u FitPlan</h2>
+            <p>Fitness aplikacija za prikaz programa treninga i vježbi.</p>
+        </section>
+
+        <section id="programi">
+            <h2>Programi treninga</h2>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Muscle Gain</h3>
+                                <p class="card-text">Program za povećanje mišićne mase.</p>
+                                <button class="btn btn-primary">Detalji</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Fat Loss</h3>
+                                <p class="card-text">Program za gubitak masnog tkiva.</p>
+                                <button class="btn btn-primary">Detalji</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Strength</h3>
+                                <p class="card-text">Program za razvoj snage.</p><button class="btn btn-primary">Detalji</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="o-nama">
+            <h2>O nama</h2>
+            <p>Fitness aplikacija za prikaz programa treninga i vježbi.</p>
+            <button id="promijeniTekst">Promijeni tekst</button>
+            <p id="motivacija">Danas je dobar dan za trening.</p>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontaktirajte nas</h2>
+            <p>Email: info@fitplan.hr</p>
+        </section>
+
+        <section id="vjezbe">
+            <h2>Lista vježbi</h2>
+
+            <input type="text" id="pretraga" placeholder="Pretraži vježbe...">
+
+            <div id="listaVjezbi"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FitPlan.</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
